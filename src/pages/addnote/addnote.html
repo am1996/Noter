@@ -1,0 +1,33 @@
+<ion-header>
+
+	<ion-navbar color="primary">
+		<ion-title>Add Note</ion-title>
+	</ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+	<form (ngSubmit)="saveNote(note.value)" #note="ngForm">
+		<ion-item>
+			<ion-label>Title</ion-label>
+			<ion-input type="text" ngModel name="title"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label>Details</ion-label>
+			<ion-textarea rows="4" ngModel name="details"></ion-textarea>
+		</ion-item>
+		<ion-item>
+			<ion-label>Type</ion-label>
+			<ion-select name="type" ngModel>
+				<ion-option value="alarm">Remainder</ion-option>
+				<ion-option value="bicycle">Workout</ion-option>
+				<ion-option value="book">Study</ion-option>
+				<ion-option value="airplane">Travel</ion-option>
+				<ion-option value="cart">Shopping</ion-option>
+			</ion-select>
+		</ion-item>
+		<br>
+		<button type="submit" color="primary" ion-button type="Save Note" block large>Save Note</button>
+	</form>
+</ion-content>

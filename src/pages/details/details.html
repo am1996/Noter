@@ -1,0 +1,19 @@
+<ion-header>
+	<ion-navbar color="primary">
+		<ion-title>Details</ion-title>
+		<ion-buttons end>
+			<button (click)="goToEdit(note)" class="delete" ion-button color="primary">
+				Edit
+			</button>
+			<button (click)="deleteNote(note)" class="delete" ion-button color="primary">
+				Delete
+			</button>
+		</ion-buttons>
+	</ion-navbar>
+</ion-header>
+
+<ion-content padding>
+	<h2 ion-text>{{note.title}}</h2>
+	<p ion-text>{{note.details}}</p>
+	<small ion-text>{{note.date | date:'d MMMM y'}}</small>
+</ion-content>

@@ -1,0 +1,34 @@
+<ion-header>
+	<ion-navbar color="primary">
+		<ion-title>
+		Noter
+		</ion-title>
+		<ion-buttons end>
+			<button (click)="clearNotes()" class="delete" ion-button color="primary">
+				Clear Notes
+			</button>
+		</ion-buttons>
+	</ion-navbar>
+</ion-header>
+
+<ion-content padding>
+	<ion-list>
+		<button *ngFor="let note of notes" ion-item (click)="visitDetail(note)">
+			<ion-icon [name]="note.type" item-start></ion-icon>
+			{{note.title}}
+			<ion-buttons item-end>
+				<button ion-button clear color="dark" (click)="visitEdit(note,$event)">
+					<ion-icon name="create"></ion-icon>
+				</button>
+				<button ion-button clear color="dark" (click)="deleteNote(note,$event)">
+					<ion-icon name="trash"></ion-icon>
+				</button>
+			</ion-buttons>
+		</button>
+	</ion-list>
+</ion-content>
+<ion-footer>
+	<ion-toolbar transparent>
+		<button color="primary" (click)="addNote()" ion-button large full>Add Note</button>
+	</ion-toolbar>
+</ion-footer>
