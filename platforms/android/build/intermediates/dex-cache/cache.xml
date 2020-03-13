@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="E:\projects\Noter\platforms\android\app\build\intermediates\transforms\desugar\release\0.jar"
+        jumboMode="false"
+        min-sdk-version="19"
+        optimize="true"
+        revision="28.0.3"
+        sha1="fdadb7b61bb98e4ec37ec5f5643bb6b8f78b5188">
+        <dex dex="E:\projects\Noter\platforms\android\app\build\intermediates\transforms\preDex\release\1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\projects\Noter\platforms\android\app\build\intermediates\transforms\desugar\release\2.jar"
+        jumboMode="false"
+        min-sdk-version="19"
+        optimize="true"
+        revision="28.0.3"
+        sha1="c917c6bfc2cfc8fa7f31484e82282c6addd072e7">
+        <dex dex="E:\projects\Noter\platforms\android\app\build\intermediates\transforms\preDex\release\2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\projects\Noter\platforms\android\app\build\intermediates\transforms\desugar\release\4.jar"
+        jumboMode="false"
+        min-sdk-version="19"
+        optimize="true"
+        revision="28.0.3"
+        sha1="b3425fda3d89a401555582541a265b6d334db525">
+        <dex dex="E:\projects\Noter\platforms\android\app\build\intermediates\transforms\preDex\release\4.jar" />
+    </item>
+
+</items>

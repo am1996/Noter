@@ -1,0 +1,4 @@
+#Wed Oct 31 15:26:54 EET 2018
+base.0=E\:\\projects\\Noter\\platforms\\android\\app\\build\\intermediates\\transforms\\dex\\release\\0
+path.0=classes.dex
+renamed.0=classes.dex
